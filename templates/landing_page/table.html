@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% comment %} This url page is meant to show the table of missing people. Includes both postgres table (to be used in final submission) and JSON table. {% endcomment %}
+{% load static %}
+{% block content %}
+
+<head>
+    <title>Missing Persons</title>
+</head>
+    {% comment %} Code to show Postgres data {% endcomment %}
+    <body style="background-color:black">
+        <br><br><br><br><br>
+        <h3 style="color:white;text-align:center;">Postgres Data Table</h3>
+        <table>
+            <tr style="border: 1px solid white">
+                <th> LAST NAME</th>
+                <th>FIRST NAME</th>
+                <th>DATE MISSING</th>
+                <th>AGE MISSING</th>
+                <th>CITY</th>
+                <th>GENDER</th>
+                <th>RACE</th>
+            </tr>
+            {% for individuals in the_missing %}
+            <tr>        
+                <td><a href= "{% url 'personView' personId=individuals.id%}">{{ individuals.last_name }}</a></td>
+                <td><a href= "{% url 'personView' personId=individuals.id%}">{{ individuals.first_name }}</a></td>
+                <td>{{ individuals.date_missing }}</td>
+                <td>{{ individuals.age_at_missing }}</td>
+                <td>{{ individuals.city}}</td>                                           
+                <td>{{ individuals.gender }}</td>
+                <td>{{ individuals.race }}</td><br>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+{% endblock %}
