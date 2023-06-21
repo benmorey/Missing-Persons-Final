@@ -2,4 +2,4 @@
 
 IS 303
 
-MADE BY: 
+MADE BY: Bayley Welsh, David Ben Morey, Ken Hall, Mason Wooden, Donna Kim
