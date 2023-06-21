@@ -1,0 +1,42 @@
+
+
+.table_box{
+    position: relative;
+    color: white;
+    width: auto;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+    font-size: large;
+    /* position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center; */
+}
+
+table{
+    position: absolute;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg"); */
+    table-layout: fixed;
+    text-align: center;
+    border: 1px solid white;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    height:100%;
+    top: 30%;
+    background:black;
+    color: white;
+}
+
+.cool_background{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
